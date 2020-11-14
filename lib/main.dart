@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,10 +31,57 @@ class _InputPageState extends State<InputPage> {
         appBar: AppBar(
           title: Center(child: Text('BMI Calculator')),
         ),
-        body: Container(
-          color: Color(0xFF1D1E33),
-          height: 200.0,
-          width: 170.0,
+        body: Column(
+          children: <Widget>[
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      color: Color(0xFF1D1E33),
+                      margin: EdgeInsets.all(15.0),
+                      height: 200.0,
+                      width: 170.0,
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      color: Color(0xFF1D1E33),
+                      margin: EdgeInsets.all(15.0),
+                      height: 200.0,
+                      width: 170.0,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+                child: Container(
+              color: Color(0xFF1D1E33),
+              margin: EdgeInsets.all(15.0),
+            )),
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      color: Color(0xFF1D1E33),
+                      margin: EdgeInsets.all(15.0),
+                      height: 200.0,
+                      width: 170.0,
+                    ),
+                  ),
+                  Expanded(
+                      child: Container(
+                    color: Color(0xFF1D1E33),
+                    margin: EdgeInsets.all(15.0),
+                    height: 200.0,
+                    width: 170.0,
+                  ))
+                ],
+              ),
+            )
+          ],
         ));
   }
 }
